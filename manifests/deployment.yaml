@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ui-deploy
+  template:
+    metadata:
+      labels:
+        app: ui-deploy
+    spec:
+      containers:
+      - name: ui-deploy
+        image: <Image>
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
