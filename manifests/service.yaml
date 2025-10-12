@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: MicroTodoUI
+spec:
+  type: LoadBalancer
+  selector:
+    app: MicroTodoUI
+  ports:
+  - port: 80
+    targetPort: 8000

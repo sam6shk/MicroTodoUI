@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ui-deploy
+  name: MicroTodoUI
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: ui-deploy
+      app: MicroTodoUI
   template:
     metadata:
       labels:
-        app: ui-deploy
+        app: ui-MicroTodoUI
     spec:
       containers:
-      - name: ui-deploy
+      - name: ui-MicroTodoUI
         image: <Image>
         resources:
           limits:
