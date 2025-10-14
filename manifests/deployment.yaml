@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: MicroTodoUI
+  name: todo-ui
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: MicroTodoUI
+      app: todo-ui
   template:
     metadata:
       labels:
-        app: ui-MicroTodoUI
+        app: todo-ui
     spec:
       containers:
-      - name: ui-MicroTodoUI
+      - name: utodo-ui
         image: acrdevtodoappmylab.azurecr.io/todo-ui:v1
         resources:
           limits:
