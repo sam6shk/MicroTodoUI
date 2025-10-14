@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ui-MicroTodoUI
-        image: <Image>
+        image: acrdevtodoappmylab.azurecr.io/todo-ui:v1
         resources:
           limits:
             memory: "128Mi"
