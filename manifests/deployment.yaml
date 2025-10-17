@@ -17,7 +17,7 @@ spec:
         image: acrdevtodoappmylab.azurecr.io/todo-ui:v1
         resources:
           limits:
-            memory: "128Mi"
-            cpu: "500m"
+            memory: "512Mi"
+            cpu: "1"
         ports:
         - containerPort: 80
