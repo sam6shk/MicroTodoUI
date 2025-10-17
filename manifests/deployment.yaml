@@ -15,9 +15,9 @@ spec:
       containers:
       - name: utodo-ui
         image: acrdevtodoappmylab.azurecr.io/todo-ui:v1
-        resources:
-          limits:
-            memory: "512Mi"
-            cpu: "1"
+        # resources:
+        #   limits:
+        #     memory: "128Mi"
+        #     cpu: "1"
         ports:
         - containerPort: 80
